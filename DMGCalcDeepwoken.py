@@ -2,7 +2,7 @@ def calculate_pvp_damage():
     """
     Calculates PvP damage and returns multiplied damage (before resistance)
     """
-    #region --- Input Collection ---
+    
     print("\n=== PvP Damage Calculation ===")
     
     # Core stats
@@ -34,9 +34,7 @@ def calculate_pvp_damage():
     # Defense and modifiers
     has_bleed = input("Has Bleed (y/n): ").lower() == 'y'
     target_resist = min(100, max(0, float(input("Enter Target Resistance % (0-100): ")))) / 100
-    #endregion
 
-    #region --- Damage Calculations ---
     # Base damage calculation
     stat_scaling = (wep_stat * wep_scaling) + \
                    (wep_stat2 * wep_scaling2) + \
@@ -70,19 +68,16 @@ def calculate_pvp_damage():
     effective_resist = target_resist * (1 - armor_pen)
     final_pvp_damage = multiplied_damage * (1 - effective_resist)
 
-    # Calculate DPS  # New calculation
+    # Calculate DPS
     dps = (final_pvp_damage * swing_speed) / 1.3 * 2
-    #endregion
 
-    #region --- PvP Results Display ---
     print("\n=== PvP Results ===")
     print(f"{'Base Damage (Pre-Bleed):':<25} {base_damage:.1f}")
     print(f"{'Raw Damage (After Bleed):':<25} {raw_damage:.1f}")
     print(f"{'Damage Modifiers:':<25} +{total_modifier:.1f}%")
     print(f"{'Pre-Resist Damage:':<25} {multiplied_damage:.1f}")
     print(f"{'Final PvP Damage:':<25} {final_pvp_damage:.1f}")
-    print(f"{'DPS:':<25} {dps:.1f}")  # New output
-    #endregion
+    print(f"{'DPS:':<25} {dps:.1f}") 
 
     return multiplied_damage
 
@@ -97,7 +92,6 @@ def calculate_pve_damage(multiplied_damage):
     player_level = int(input("Enter player level (1-20): "))
     player_level = max(1, min(20, player_level))
     
-    # CORRECTED PvE calculation (26% per level)
     pve_multiplier = 1 + (player_level * 0.26)
     base_pve_damage = multiplied_damage * pve_multiplier
     
