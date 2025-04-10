@@ -1,5 +1,15 @@
 I dont know if someone needs this, but anyway
 
-by now it can calculate pvp/pve dmg, u can add dmg multipliers, includes armor resistances and armor penetration, DPS, hits to kill 1000 HP monster
+Roadmap (i guess?):
 
-ill add ui, scaling rings and weapon selection as well as talent selection... someday
+[x] pvp damage calculations
+[x] pve damage calculation
+[x] resistances and penetration for pvp
+[x] damage multipliers (just input from 0-75, no talents yet)
+[ ] weapon select
+[ ] talents damage multipliers select
+[ ] ui
+[ ] Scaling rings
+
+~~TOP SECRET:~~
+~~TOUCH GRASS~~
