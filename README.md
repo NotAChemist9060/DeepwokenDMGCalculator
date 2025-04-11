@@ -8,7 +8,7 @@ Roadmap (i guess?):
 - [x] damage multipliers (just input from 0-75, no talents yet)
 - [ ] weapon select
 - [ ] talents damage multipliers select
-- [ ] ui
+- [x] ui
 - [ ] Scaling rings
 
 ~~TOP SECRET:~~
