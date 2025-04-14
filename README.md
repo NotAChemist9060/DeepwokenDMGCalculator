@@ -16,3 +16,6 @@ Roadmap (i guess?):
 - [ ] ~~TOUCH GRASS~~
 
 I'll add restrictions to wep stat, scaling etc.... soon
+
+Ui:
+
