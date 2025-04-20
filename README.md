@@ -19,3 +19,4 @@ I'll add restrictions to wep stat, scaling etc.... soon
 
 Ui:
 
+![image](https://github.com/user-attachments/assets/509f4693-0df4-4ca2-9f87-1f5da4ee9a53)
