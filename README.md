@@ -14,6 +14,7 @@ Roadmap (i guess?):
 ~~TOP SECRET:~~
 
 - [ ] ~~TOUCH GRASS~~
+- [ ] ~~TOUCH WOMAN~~
 
 I'll add restrictions to wep stat, scaling etc.... soon
 
